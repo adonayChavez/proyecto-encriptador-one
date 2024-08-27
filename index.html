@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingresa el texto aquí"></textarea>
+            <div class="botones0">
+                <button class="botonEliminar" id="botonEliminar" type="button"
+                    onclick="eliminarTexto()">Deleted</button>
+                <button class="botonCopiar" id="botonCopiar" type="button" onclick="copiarTexto()">Copy</button>
+            </div>
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+            </div>
+        </div>
+        <div class="encriptado">
+            <img src="imagenes/imagen0.jpg" alt="" id="imagen" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>&copy;2024 desarrollado por AdonayChavez. todos los derechos reservados</p>
+</footer>
+<script src="index.js"></script>
+
+</html>
